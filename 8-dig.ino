@@ -66,7 +66,7 @@ void display_digits() {
 			temp_d = temp_d / 10;
 			if(temp_d == 0 && d == 0)
 				break;
-			uint16_t draw_digit(i, d); 
+			draw_digit(i, d); 
 		}
 	}
 	else if( MEMORY2 > 0) {
@@ -75,12 +75,12 @@ void display_digits() {
 		for (uint8_t i = 0; i < 4; ++i) {
 			d = temp_d % 10;
 			temp_d = temp_d / 10;
-			uint16_t draw_digit(i, d); 
+			draw_digit(i, d); 
 		}
 		for (uint8_t i = 4; i < 8, i++) {
 			d = temp_d % 10;
 			temp_d = temp_d / 10;
-			uint16_t draw_digit(i, d);
+			draw_digit(i, d);
 		}
 	}
 }
